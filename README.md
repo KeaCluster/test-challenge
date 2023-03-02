@@ -21,7 +21,9 @@
   - You can ignore ```index.js```
 
 ### Other Components
-    - Write the named files for each case.
+
+- Write the named files for each case.
+    
     1. Write a function that takes in a number and returns one of the following:
         - If the number is divisible by 3, return 'Fizz'.
         - If the number is divisible by 5, return 'Buzz'.
