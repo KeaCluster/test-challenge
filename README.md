@@ -1,4 +1,4 @@
-# Jest Challenge: Enhanced Instructions
+# Jest Challenge
 
 ## Overview
 
