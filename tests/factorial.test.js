@@ -1,6 +1,6 @@
 // factorial.test.js
 
-const calcularFactorial = require('./factorial');
+const calcularFactorial = require('../factorial');
 
 // Prueba para el caso base: factorial de 0 debe ser 1
 test('Factorial de 0 es 1', () => {
