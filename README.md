@@ -1,39 +1,68 @@
-# Jest Challenge
+# Jest Testing Workshop
 
-## Overview
+<!--toc:start-->
 
-### Purpose
+- [About](#about)
+- [Requirements](#requirements)
+- [Project Structure](#project-structure)
+  - [Files](#files)
+- [Practical Tasks](#practical-tasks)
+  - [API Call Simulation](#api-call-simulation)
+  - [DNA String Validator](#dna-string-validator)
+  - [Factorial Calculator](#factorial-calculator)
 
-- This is a concise exercise designed to enhance your skills in unit testing using Jest.
-- The tasks involve refactoring and optimizing code.
+<!--toc:end-->
 
-### Technical Requirements
+## About
 
-- **Primary Tool:** Jest
-- **Additional Requirements:** Dependencies related to Jest
+This repository was made to help you improve your proficiency with Jest
+through a hands-on workshop.
+You'll tackle real-world coding challenges and learn to write comprehensive tests,
+robust and reliable code.
 
-### Key Components
+## Requirements
 
-1. **Files for Testing:**
-   - `calculator.js` and `users.js`: These files contain the primary methods you will be testing.
-   - `tests` directory: Here, you are expected to write your test cases.
-   - `data.js`: This file includes an array of user data for manipulation in tests.
-   - `index.js`: This file is not relevant to the exercise and can be ignored.
+- Node.js
+- Jest
+- Jest-related dependencies in the project
+  - Check `package.json`
+- Run to install locally after cloning:
 
-2. **Specific Testing Tasks:**
+```sh
+npm install
+```
 
-    a. **FizzBuzz Function:**
-       - Develop a function that accepts a number and evaluates the following conditions:
-          - If divisible by 3, return 'Fizz'.
-          - If divisible by 5, return 'Buzz'.
-          - If divisible by both 3 and 5, return 'FizzBuzz'.
-          - Otherwise, return the original number.
+## Project Structure
 
-    b. **DNA String Filter:**
-       - Create a function to process a DNA string (e.g., 'CTAGGGTA').
-       - The function should remove any non-canonical DNA bases (anything other than 'C', 'T', 'A', 'G').
-       - The function should be case sensitive (keep 'C' but remove 'c').
-       - If the DNA string is empty, return an empty string.
+### Files
 
-    c. **Factorial Calculation:**
-       - Implement a function to calculate the factorial of a number using recursion.
+- `users.js` to implement functions that will be tested.
+- `data.js` contains an array of user data.
+- `index.js` is a file to be used in case you'd like to write custom functions.
+- All test cases should be written inside `tests/` directory.
+
+## Practical Tasks
+
+### API Call Simulation
+
+- Develop a function in `users.js` to simulate fetching user data.
+  - The function should accept a user `ID`.
+  - Return a promise that resolved user data. You can mock this inside tests.
+  - You can include error handling for cases where the `ID` is invalid or unavailable.
+
+### DNA String Validator
+
+- Create a function to validate DNA strings (e.g., `'CTAGGGTA'`).
+  - Allow only canonical DNA bases `('C', 'T', 'A', 'G')`.
+  - The function should be case-sensitive. Only accept uppercase bases.
+  - Return empty string for invalid or empty inputs.
+
+### Factorial Calculator
+
+- Implement a function to calculate the factorial of a number using recursion.
+  - Ensure it handles edge cases: negative numbers or non-integer inputs.
+
+For each tasks, develop a suite of tests inside the `tests directory`.
+Thoroughly validate functionality.
+Include positive and negative test cases to cover various scenarios and edge cases.
+This approach will ensure your functions behave as expected under different conditions
